@@ -1,11 +1,9 @@
 package com.example.seniorSoftwareEngineering.service;
 
 import com.example.seniorSoftwareEngineering.model.RegistroPonto;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.stereotype.Service;
-import java.io.IOException;
 import java.time.LocalDateTime;
 
 @Service
@@ -26,7 +24,6 @@ public class RegistroPontoService {
             }else{
                 return true;
             }
-
         } catch ( JSONException e) {
             return false;
         }
@@ -34,14 +31,6 @@ public class RegistroPontoService {
 
     public LocalDateTime setIncludedAt(){
         return LocalDateTime.now();
-    }
-
-    public int setEmployerId(JSONObject  registro) throws JSONException {
-        return (int) registro.get("employerId");
-    }
-
-    public int setEmployeeId(JSONObject  registro) throws JSONException {
-        return (int) registro.get("employeeId");
     }
 
     public RegistroPonto create(JSONObject  registro) throws JSONException {

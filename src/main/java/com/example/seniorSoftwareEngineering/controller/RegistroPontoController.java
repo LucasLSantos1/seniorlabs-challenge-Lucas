@@ -8,7 +8,6 @@ import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-
 @RestController
 @RequestMapping("/api-registroPonto/registroPonto")
 public class RegistroPontoController {
@@ -20,7 +19,6 @@ public class RegistroPontoController {
     @ResponseBody
     public String salvar(@RequestBody String registroPonto){
         try{
-
             if(registroPontoService.isJSONValid(registroPonto)){
                 JSONObject registroPontoJSON = new JSONObject(registroPonto);
                 RegistroPonto registroPontoCreated = registroPontoService.create(registroPontoJSON);
