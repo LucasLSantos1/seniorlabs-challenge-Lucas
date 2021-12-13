@@ -23,5 +23,5 @@ http://ec2-3-141-36-40.us-east-2.compute.amazonaws.com:8080/api-registroPonto/re
 }
 
 ## Tratativa de Erros
-### Ao enviar a requisição com algum dos campos obrigatórios (employeeId e employerId) pendentes, a seguinte mensagem de erro é retornada.
+### Ao enviar a requisição com algum dos campos obrigatórios (employeeId e employerId) pendentes, a seguinte mensagem de erro é retornada:
 Entrada inválida, favor verificar os campos 'employerId'  e 'employeeId'
